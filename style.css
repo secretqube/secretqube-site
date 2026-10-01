@@ -327,3 +327,11 @@ html[data-lang=ar] .demo-top{letter-spacing:0}
 @media(min-width:561px) and (max-width:900px){.stage{min-height:445px}}
 @media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#07161c;--ink:#e3eeeb}}
 @media(max-width:560px){.notif,.rule-chip{display:block;-webkit-line-clamp:unset;overflow:visible}}
+
+/* review fixes */
+.hero h1{max-width:14ch;text-wrap:balance}
+.eyebrow{letter-spacing:.04em}
+html[data-lang=ar] .eyebrow{letter-spacing:0}
+.demo-top{letter-spacing:0}
+.demo-hint{color:#b3cdc5;font-size:13px}
+.plan-picker>span{flex-basis:100%;margin:0}

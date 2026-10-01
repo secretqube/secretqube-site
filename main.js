@@ -121,7 +121,7 @@
     clear();reset();var c=cycles[current];fill(c);
     document.querySelectorAll('[data-scenario]').forEach(function(b){b.setAttribute('aria-pressed',String(Number(b.dataset.scenario)===current));});
     if(reduce.matches){result(c);return;}
-    if(status)status.innerHTML=bi('تصل الرسالة إلى هاتفك…','A message arrives on your phone…');
+    if(status)status.innerHTML=bi('تصل الرسالة إلى جوالك…','A message arrives on your phone…');
     void stage.offsetWidth;
     later(function(){stage.classList.add('go');},60);
     later(function(){stage.classList.add(c.hold?'held':'matched');if(status)status.innerHTML=bi('جارٍ فحص القاعدة…','Checking your rule…');},900);
