@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-lang="ar">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Secret Qube — SMS Forwarder</title>
+<meta name="description" content="Secret Qube — SMS Forwarder: forward SMS to Telegram, email or another number. No ads, no message servers.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap">
+  <a class="brand" href="./">Secret Qube</a>
+  <nav>
+    <a class="on" href="./"><span data-l="ar">الرئيسية</span><span data-l="en">Home</span></a>
+    <a href="privacy.html"><span data-l="ar">سياسة الخصوصية</span><span data-l="en">Privacy Policy</span></a>
+    <a href="support.html"><span data-l="ar">الدعم وحذف البيانات</span><span data-l="en">Support &amp; Data Deletion</span></a>
+    <span class="lang"><button id="lt" type="button">English</button></span>
+  </nav>
+</div></header>
+<main><div class="wrap">
+
+<section data-l="ar">
+  <h1>SMS Forwarder</h1>
+  <p>تطبيق أندرويد من <strong>Secret Qube</strong> يحوّل رسائلك النصية الواردة إلى رقم آخر أو بريد إلكتروني أو تيليجرام، حسب قواعد تضعها أنت، مباشرة من جوالك.</p>
+  <div class="card">
+    <ul>
+      <li>بلا إعلانات.</li>
+      <li>بلا خوادم وسيطة لمحتوى رسائلك: الرسائل تذهب من جوالك مباشرة إلى الوجهة التي اخترتها.</li>
+      <li>قواعد حسب المرسل والكلمات والشريحة، حتى 3 وجهات لكل قاعدة.</li>
+      <li>واجهة بـ 20 لغة مع دعم كامل للعربية.</li>
+    </ul>
+  </div>
+  <p><a class="btn" href="support.html">الدعم والتواصل</a></p>
+</section>
+
+<section data-l="en">
+  <h1>SMS Forwarder</h1>
+  <p>An Android app by <strong>Secret Qube</strong> that forwards your incoming text messages to another number, an email address or Telegram, based on rules you define, straight from your phone.</p>
+  <div class="card">
+    <ul>
+      <li>No ads.</li>
+      <li>No intermediary servers for your message content: messages go from your phone directly to the destination you chose.</li>
+      <li>Rules by sender, keywords and SIM, up to 3 destinations per rule.</li>
+      <li>20 languages with full Arabic (RTL) support.</li>
+    </ul>
+  </div>
+  <p><a class="btn" href="support.html">Support &amp; Contact</a></p>
+</section>
+
+</div></main>
+<footer><div class="wrap">
+  © 2026 Secret Qube · <a href="mailto:support@secretqube.com">support@secretqube.com</a>
+</div></footer>
+<script>
+(function(){var h=document.documentElement,b=document.getElementById('lt');
+function set(l){h.setAttribute('data-lang',l);h.lang=l;h.dir=l==='ar'?'rtl':'ltr';b.textContent=l==='ar'?'English':'العربية';try{localStorage.setItem('lang',l)}catch(e){}}
+var q=(location.hash.match(/lang=(ar|en)/)||[])[1],s=null;try{s=localStorage.getItem('lang')}catch(e){}
+set(q||s||'ar');b.onclick=function(){set(h.getAttribute('data-lang')==='ar'?'en':'ar')};})();
+</script>
+</body>
+</html>

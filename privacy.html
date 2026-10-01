@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-lang="ar">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy — Secret Qube SMS Forwarder</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap">
+  <a class="brand" href="./">Secret Qube</a>
+  <nav>
+    <a href="./"><span data-l="ar">الرئيسية</span><span data-l="en">Home</span></a>
+    <a class="on" href="privacy.html"><span data-l="ar">سياسة الخصوصية</span><span data-l="en">Privacy Policy</span></a>
+    <a href="support.html"><span data-l="ar">الدعم وحذف البيانات</span><span data-l="en">Support &amp; Data Deletion</span></a>
+    <span class="lang"><button id="lt" type="button">English</button></span>
+  </nav>
+</div></header>
+<main><div class="wrap">
+
+<section data-l="ar">
+<h1>سياسة الخصوصية</h1>
+<p class="muted">تطبيق SMS Forwarder — المطوّر: Secret Qube — آخر تحديث: 1 أكتوبر 2026</p>
+
+<h2>1. نظرة عامة</h2>
+<p>يعمل التطبيق على جوالك ويحوّل الرسائل إلى الوجهات التي تحددها أنت. <strong>لا نملك خوادم تستقبل محتوى رسائلك</strong>، ولا نبيع بياناتك، ولا يحتوي التطبيق على إعلانات.</p>
+
+<h2>2. ما الذي يعالجه التطبيق</h2>
+<table>
+<tr><th>البيانات / الإذن</th><th>الغرض</th></tr>
+<tr><td>الرسائل النصية الواردة: المرسل والنص والوقت (RECEIVE_SMS)</td><td>مطابقتها مع قواعدك وتحويلها إلى الوجهات التي اخترتها.</td></tr>
+<tr><td>إرسال الرسائل (SEND_SMS)</td><td>إرسال الرسالة المحوّلة إلى رقم هاتف حددته أنت كوجهة.</td></tr>
+<tr><td>حالة الهاتف والشرائح (READ_PHONE_STATE)</td><td>التمييز بين الشريحتين، وتحديد شريحة الاستقبال والإرسال، وتنبيه غياب الشريحة.</td></tr>
+<tr><td>جهات الاتصال (READ_CONTACTS)</td><td>اختيارية: فقط لتسهيل اختيار رقم الوجهة. لا نخزّن جهات اتصالك ولا نرسلها لأي جهة.</td></tr>
+<tr><td>الإشعارات (POST_NOTIFICATIONS)</td><td>عرض تنبيهات التطبيق على جوالك.</td></tr>
+<tr><td>وصول الإشعارات (Notification Listener)</td><td>يُطلب فقط إن فعّلت ميزة تحويل رسائل RCS. يُقرأ نص إشعار تطبيق الرسائل لتحويله حسب قواعدك. لا يعمل دون موافقتك الصريحة، ويمكنك سحبه من إعدادات النظام في أي وقت.</td></tr>
+<tr><td>الإنترنت وحالة الشبكة</td><td>إرسال الرسائل إلى الوجهات الإلكترونية التي حددتها (بريد إلكتروني، تيليجرام، Webhook)، وإعادة المحاولة عند عودة الشبكة.</td></tr>
+<tr><td>التشغيل عند الإقلاع (RECEIVE_BOOT_COMPLETED) و WAKE_LOCK والخدمة الأمامية عبر WorkManager</td><td>استمرار التحويل بعد إعادة تشغيل الجوال وإتمام الإرسال في الخلفية.</td></tr>
+<tr><td>القفل البيومتري (USE_BIOMETRIC)</td><td>قفل التطبيق ببصمتك أو وجهك أو رمز الجوال. تتم العملية بالكامل عبر نظام أندرويد، ولا يصل التطبيق إلى بياناتك البيومترية.</td></tr>
+<tr><td>الفوترة (BILLING)</td><td>شراء الاشتراك عبر Google Play. تتم المعالجة عبر Google، ولا نطلع على بيانات بطاقتك.</td></tr>
+</table>
+
+<h2>3. إلى أين تذهب رسائلك</h2>
+<p>تُرسل الرسالة فقط إلى الوجهات التي تضبطها أنت: رقم هاتف، أو بريد إلكتروني (عبر Gmail أو خادم SMTP الخاص بك)، أو بوت تيليجرام، أو رابط Webhook. هذه الجهات خدمات تابعة لأطراف ثالثة تخضع لسياساتها هي، ونحن لا نتحكم فيها. أنت المسؤول عن اختيار وجهات موثوقة، وعن مضمون الرسائل التي تحوّلها (قد تحتوي رموز تحقق أو بيانات مالية). كما أن بيانات الدخول التي تدخلها (كرمز بوت تيليجرام أو كلمة مرور بريد SMTP) تُخزَّن على جوالك لاستخدامها في الإرسال فقط.</p>
+
+<h2>4. التخزين والاحتفاظ</h2>
+<ul>
+<li>القواعد والإعدادات وسجل التحويل تُخزَّن محلياً على جوالك فقط.</li>
+<li>يمكنك مسح السجل أو حذف القواعد من داخل التطبيق، أو مسح كل البيانات بحذف التطبيق أو "مسح بيانات التطبيق" من إعدادات النظام.</li>
+<li>قد يشمل النسخ الاحتياطي التلقائي في أندرويد إعدادات التطبيق ضمن حسابك في Google، وفق إعدادات جوالك وسياسات Google. يمكنك إيقافه من إعدادات النظام.</li>
+</ul>
+
+<h2>5. المشاركة مع أطراف ثالثة</h2>
+<p>لا نبيع بياناتك ولا نشاركها لأغراض إعلانية، ولا يتضمن التطبيق مكتبات إعلانات. لا تُشارَك بياناتك إلا مع الوجهات التي تضبطها أنت (البند 3) ومع Google Play لمعالجة الاشتراك.</p>
+
+<h2>6. الأمان</h2>
+<p>تنتقل الرسائل إلى الوجهات الإلكترونية عبر اتصالات مشفّرة قدر الإمكان، وتُحفظ بيانات الدخول على جوالك ضمن مساحة التطبيق المعزولة. ننصح بتفعيل قفل الشاشة وقفل التطبيق. لا توجد وسيلة نقل أو تخزين آمنة بنسبة 100%.</p>
+
+<h2>7. الأطفال</h2>
+<p>التطبيق غير موجّه للأطفال دون 13 عاماً، ولا نجمع عمداً بيانات منهم.</p>
+
+<h2>8. حقوقك وحذف البيانات</h2>
+<p>بياناتك على جوالك وتحت سيطرتك الكاملة. للتفاصيل وخطوات الحذف راجع <a href="support.html">صفحة الدعم وحذف البيانات</a>. ولأي طلب يخص بياناتك راسلنا على <a href="mailto:support@secretqube.com">support@secretqube.com</a>.</p>
+
+<h2>9. التعديلات</h2>
+<p>قد نحدّث هذه السياسة عند إضافة ميزات جديدة، وننشر النسخة المحدّثة هنا مع تاريخ التحديث. الاستمرار في استخدام التطبيق بعد التحديث يعني قبولك للسياسة المحدّثة.</p>
+
+<h2>10. التواصل</h2>
+<p>Secret Qube — <a href="mailto:support@secretqube.com">support@secretqube.com</a></p>
+</section>
+
+<section data-l="en">
+<h1>Privacy Policy</h1>
+<p class="muted">SMS Forwarder app — Developer: Secret Qube — Last updated: October 1, 2026</p>
+
+<h2>1. Overview</h2>
+<p>The app runs on your phone and forwards messages to destinations you define. <strong>We do not operate servers that receive your message content</strong>, we do not sell your data, and the app contains no ads.</p>
+
+<h2>2. What the app processes</h2>
+<table>
+<tr><th>Data / permission</th><th>Purpose</th></tr>
+<tr><td>Incoming SMS: sender, text, time (RECEIVE_SMS)</td><td>Matching them against your rules and forwarding them to the destinations you chose.</td></tr>
+<tr><td>Sending SMS (SEND_SMS)</td><td>Sending the forwarded message to a phone number you set as a destination.</td></tr>
+<tr><td>Phone state and SIMs (READ_PHONE_STATE)</td><td>Distinguishing between the two SIMs, choosing the receiving and sending SIM, and alerting when a SIM is missing.</td></tr>
+<tr><td>Contacts (READ_CONTACTS)</td><td>Optional: only to make picking a destination number easier. We do not store your contacts or send them anywhere.</td></tr>
+<tr><td>Notifications (POST_NOTIFICATIONS)</td><td>Showing the app's alerts on your phone.</td></tr>
+<tr><td>Notification access (Notification Listener)</td><td>Requested only if you enable RCS forwarding. The text of your messaging app's notification is read to forward it according to your rules. It does nothing without your explicit consent, and you can revoke it in system settings at any time.</td></tr>
+<tr><td>Internet and network state</td><td>Sending messages to the online destinations you set (email, Telegram, webhook) and retrying when the network returns.</td></tr>
+<tr><td>Run at boot (RECEIVE_BOOT_COMPLETED), WAKE_LOCK and foreground service via WorkManager</td><td>Continuing to forward after a restart and completing background delivery.</td></tr>
+<tr><td>Biometric lock (USE_BIOMETRIC)</td><td>Locking the app with your fingerprint, face or device passcode. This is handled entirely by Android; the app never accesses your biometric data.</td></tr>
+<tr><td>Billing (BILLING)</td><td>Purchasing a subscription through Google Play. Payment is processed by Google; we do not see your card details.</td></tr>
+</table>
+
+<h2>3. Where your messages go</h2>
+<p>A message is sent only to the destinations you configure: a phone number, an email address (via Gmail or your own SMTP server), a Telegram bot, or a webhook URL. These are third-party services governed by their own policies, which we do not control. You are responsible for choosing trusted destinations and for the content you forward (it may include verification codes or financial information). Credentials you enter (such as a Telegram bot token or SMTP password) are stored on your phone and used only for sending.</p>
+
+<h2>4. Storage and retention</h2>
+<ul>
+<li>Rules, settings and the forwarding log are stored locally on your phone only.</li>
+<li>You can clear the log or delete rules inside the app, or erase everything by uninstalling the app or using "Clear data" in system settings.</li>
+<li>Android's automatic backup may include the app's settings in your Google account, depending on your phone settings and Google's policies. You can turn it off in system settings.</li>
+</ul>
+
+<h2>5. Sharing with third parties</h2>
+<p>We do not sell your data or share it for advertising, and the app includes no advertising libraries. Your data is shared only with the destinations you configure (section 3) and with Google Play to process the subscription.</p>
+
+<h2>6. Security</h2>
+<p>Messages are sent to online destinations over encrypted connections where possible, and credentials are kept on your phone in the app's isolated storage. We recommend enabling a screen lock and the app lock. No method of transmission or storage is 100% secure.</p>
+
+<h2>7. Children</h2>
+<p>The app is not directed to children under 13, and we do not knowingly collect data from them.</p>
+
+<h2>8. Your rights and data deletion</h2>
+<p>Your data is on your phone and fully under your control. For details and deletion steps, see the <a href="support.html">Support &amp; Data Deletion page</a>. For any request about your data, email <a href="mailto:support@secretqube.com">support@secretqube.com</a>.</p>
+
+<h2>9. Changes</h2>
+<p>We may update this policy when new features are added and will post the updated version here with its date. Continued use of the app after an update means you accept the updated policy.</p>
+
+<h2>10. Contact</h2>
+<p>Secret Qube — <a href="mailto:support@secretqube.com">support@secretqube.com</a></p>
+</section>
+
+</div></main>
+<footer><div class="wrap">© 2026 Secret Qube · <a href="mailto:support@secretqube.com">support@secretqube.com</a></div></footer>
+<script>
+(function(){var h=document.documentElement,b=document.getElementById('lt');
+function set(l){h.setAttribute('data-lang',l);h.lang=l;h.dir=l==='ar'?'rtl':'ltr';b.textContent=l==='ar'?'English':'العربية';try{localStorage.setItem('lang',l)}catch(e){}}
+var q=(location.hash.match(/lang=(ar|en)/)||[])[1],s=null;try{s=localStorage.getItem('lang')}catch(e){}
+set(q||s||'ar');b.onclick=function(){set(h.getAttribute('data-lang')==='ar'?'en':'ar')};})();
+</script>
+</body>
+</html>
