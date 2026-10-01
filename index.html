@@ -11,7 +11,7 @@
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:title" content="SMS Forwarder by Secret Qube">
-<meta property="og:description" content="Forward SMS & RCS to your email, Telegram or another phone, by your rules. No servers for your message content.">
+<meta property="og:description" content="Forward SMS & RCS to your email, Telegram or another phone, by your rules. Your phone.<br>Your destination.<br>No detours.">
 <meta property="og:site_name" content="Secret Qube">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="ar_AR">
@@ -27,7 +27,7 @@
 <link rel="stylesheet" href="style.css">
 <script src="lang.js"></script>
 </head>
-<body>
+<body class="landing">
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
@@ -62,15 +62,22 @@
   <div class="wrap">
     <div>
       <span class="app-tag"><img src="assets/app-icon.png" alt="" width="40" height="40"><span lang="ar">محوّل الرسائل SMS Forwarder</span><span lang="en">SMS Forwarder for Android</span></span>
-      <h1 id="hero-title"><span lang="ar">رسائلك تصل حيث تحتاجها.</span><span lang="en">Your messages, where you need them.</span></h1>
+      <h1 id="hero-title"><span lang="ar">رسالة واحدة.<br><em>كل الأماكن المهمة.</em></span><span lang="en">One message.<br><em>All the right places.</em></span></h1>
       <p class="lede"><span lang="ar">حوّل رسائل SMS وRCS إلى بريدك أو تيليجرام أو رقم آخر، بقواعد تضعها أنت، مباشرة من جوالك. ومع خطة Business إلى Slack أو Teams أو Google Sheets أيضًا.</span><span lang="en">Forward SMS and RCS to your email, Telegram or another phone, by rules you set, straight from your phone. On Business, to Slack, Teams and Google Sheets too.</span></p>
       <div class="cta-row">
-        <a class="btn btn-light" href="#how"><span lang="ar">شاهد كيف يعمل</span><span lang="en">See how it works</span></a>
+        <a class="btn btn-light" href="#demo"><span lang="ar">جرّب التحويل الآن</span><span lang="en">Try the live demo</span></a>
         <a class="btn btn-ghost" href="mailto:support@secretqube.com?subject=Notify%20me%20when%20SMS%20Forwarder%20launches"><svg width="18" height="18" aria-hidden="true"><use href="#i-play"/></svg><span lang="ar">أبلغني عند الإطلاق على Google Play</span><span lang="en">Notify me at launch on Google Play</span></a>
       </div>
       <p class="hero-note"><span lang="ar">مجاني دائماً لقاعدة واحدة. جرّب كل الميزات 14 يوماً.</span><span lang="en">Free forever for one rule. Try every feature for 14 days.</span></p>
     </div>
 
+    <div class="hero-demo" id="demo">
+      <div class="demo-top"><span lang="ar">جرّبها بنفسك</span><span lang="en">TAKE IT FOR A SPIN</span><span class="demo-label"><span lang="ar">عرض توضيحي</span><span lang="en">Interactive demo</span></span></div>
+      <div class="scenario-tabs" role="group" aria-label="Demo scenarios">
+        <button type="button" data-scenario="0" aria-pressed="true"><span lang="ar">شحنة</span><span lang="en">Delivery</span></button>
+        <button type="button" data-scenario="2" aria-pressed="false"><span lang="ar">رسالة عميل</span><span lang="en">Customer</span></button>
+        <button type="button" data-scenario="1" aria-pressed="false"><span lang="ar">رمز تحقق</span><span lang="en">Private code</span></button>
+      </div>
     <div class="stage" id="stage">
       <span class="sr"><span lang="ar">رسالة تصل إلى الجوال، تطابق قاعدة، وتُرسل إلى الوجهات التي اخترتها. رموز التحقق تبقى على الجوال.</span><span lang="en">A message arrives on the phone, matches a rule, and goes to the destinations you chose. Verification codes stay on the phone.</span></span>
       <svg class="wires" aria-hidden="true"></svg>
@@ -96,8 +103,13 @@
         <div class="dest" data-d="sheets"><i><svg><use href="#i-grid"/></svg></i><div>Google Sheets<small><span lang="ar">صف لكل رسالة</span><span lang="en">A row per message</span></small></div><svg class="tick" width="18" height="18"><use href="#i-check"/></svg></div>
       </div>
     </div>
+      <div class="demo-bottom"><p id="demo-status" role="status" aria-live="polite"></p><button type="button" id="replay"><span lang="ar">إعادة التشغيل</span><span lang="en">Replay demo</span></button></div>
+      <p class="demo-disclaimer"><span lang="ar">محاكاة ببيانات تجريبية؛ لا تُرسل رسائل حقيقية.</span><span lang="en">Simulated with sample data. No real messages are sent.</span></p>
+    </div>
   </div>
 </section>
+
+<div class="proof-strip"><div class="wrap"><span><b>01</b><span lang="ar">هاتفك يتحكم</span><span lang="en">Your phone, in control</span></span><span><b>14</b><span lang="ar">يوماً لتجربة الميزات</span><span lang="en">days to explore every feature</span></span><span><b>20</b><span lang="ar">لغة في التطبيق</span><span lang="en">languages, one simple app</span></span></div></div>
 
 <section id="how" aria-labelledby="how-title">
   <div class="wrap">
@@ -113,13 +125,17 @@
   </div>
 </section>
 
-<section aria-labelledby="screens-title" style="padding-top:0">
+<section class="product-tour" aria-labelledby="screens-title" id="tour">
   <div class="wrap">
     <div class="sec-head">
       <h2 id="screens-title"><span lang="ar">واضح من أول شاشة</span><span lang="en">Clear from the first screen</span></h2>
-      <p><span lang="ar">ابدأ من وصفة جاهزة أو من الصفر، واعرف دائماً هل التحويل يعمل.</span><span lang="en">Start from a ready recipe or from scratch, and always know whether forwarding is running.</span></p>
+      <p><span lang="ar">من القاعدة إلى النتيجة: جولة في طريقة استخدام التطبيق. الواجهات أدناه معاينات توضيحية، وليست لقطات شاشة فعلية.</span><span lang="en">From your first rule to the result: explore the app workflow. These are illustrative interface previews, not actual screenshots.</span></p>
     </div>
-    <div class="screens" role="region" tabindex="0" aria-label="App screens">
+    <div class="tour-tabs" role="group" aria-label="App preview">
+<button type="button" data-tour="0" aria-pressed="true"><span lang="ar">01 · قواعدك</span><span lang="en">01 · Your rules</span></button>
+<button type="button" data-tour="1" aria-pressed="false"><span lang="ar">02 · بداية سهلة</span><span lang="en">02 · Easy setup</span></button>
+<button type="button" data-tour="2" aria-pressed="false"><span lang="ar">03 · النتيجة</span><span lang="en">03 · The result</span></button>
+</div><div class="screens" role="region" tabindex="0" aria-label="App screens">
       <figure class="shot">
         <div class="phone" aria-hidden="true"><div class="scr">
           <div class="m-head">
@@ -190,7 +206,7 @@
 <section class="privacy-band" aria-labelledby="priv-title">
   <div class="wrap privacy-grid">
     <div>
-      <h2 class="big" id="priv-title"><span lang="ar">بلا خوادم لمحتوى رسائلك.</span><span lang="en">No servers for your message content.</span></h2>
+      <h2 class="big" id="priv-title"><span lang="ar">من هاتفك.<br>إلى وجهتك مباشرة.</span><span lang="en">Your phone.<br>Your destination.<br>No detours.</span></h2>
       <p><span lang="ar">كل رسالة تخرج من جوالك مباشرة إلى الوجهة التي اخترتها. لا نستقبلها ولا نخزّنها ولا نراها.</span><span lang="en">Each message leaves your phone straight for the destination you chose. We never receive, store or see it.</span></p>
     </div>
     <ul class="facts">
@@ -206,9 +222,9 @@
   <div class="wrap">
     <div class="sec-head">
       <h2 id="plans-title"><span lang="ar">ابدأ مجاناً، وادفع حين تحتاج أكثر</span><span lang="en">Start free, pay when you need more</span></h2>
-      <p><span lang="ar">كل مستخدم جديد يجرّب ميزات Business كاملة لمدة 14 يوماً. بعدها لا يُحذف شيء.</span><span lang="en">Every new user gets 14 days with all Business features. When it ends, nothing is deleted.</span></p>
+      <p><span lang="ar">كل مستخدم جديد يجرّب ميزات Business كاملة لمدة 14 يوماً. بعدها لا يُحذف شيء.</span><span lang="en">Explore Business features for 14 days. Your rules stay saved when the trial ends.</span></p>
     </div>
-    <div class="plans">
+    <div class="plan-picker" role="group" aria-label="Choose your use case"><span lang="ar">ما استخدامك؟</span><span lang="en">What do you need?</span><button type="button" data-plan="0" aria-pressed="false"><span lang="ar">تحويل بسيط</span><span lang="en">One simple rule</span></button><button type="button" data-plan="1" aria-pressed="false"><span lang="ar">استخدام شخصي</span><span lang="en">Personal workflows</span></button><button type="button" data-plan="2" aria-pressed="false"><span lang="ar">فريق وأتمتة</span><span lang="en">Team & automation</span></button></div><p id="plan-advice" role="status"></p><div class="plans">
       <div class="plan">
         <h3><span lang="ar">مجاني</span><span lang="en">Free</span></h3>
         <p class="who"><span lang="ar">لتحويل نوع واحد من الرسائل إلى مكان واحد.</span><span lang="en">For forwarding one kind of message to one place.</span></p>
@@ -224,7 +240,7 @@
         <p class="who"><span lang="ar">لمن لديه أكثر من رسالة مهمة وأكثر من وجهة.</span><span lang="en">For more than one kind of message, to more than one place.</span></p>
         <ul>
           <li><svg width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg><span><span lang="ar">قواعد بلا حد، 3 وجهات لكل قاعدة</span><span lang="en">Unlimited rules, 3 destinations each</span></span></li>
-          <li><svg width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg><span><span lang="ar">كل الشروط وصيغة الرسالة</span><span lang="en">Every condition and your own message format</span></span></li>
+          <li><svg width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg><span><span lang="ar">شروط متقدمة وصيغة الرسالة</span><span lang="en">Advanced conditions and your own message format</span></span></li>
           <li><svg width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg><span><span lang="ar">أوقات العمل والشريحتان</span><span lang="en">Working hours and dual SIM</span></span></li>
         </ul>
         <p class="note"><span lang="ar">شهري أو سنوي عبر Google Play</span><span lang="en">Monthly or yearly through Google Play</span></p>
@@ -244,6 +260,13 @@
   </div>
 </section>
 
+<section class="faq" id="questions"><div class="wrap faq-layout"><div class="sec-head"><span class="eyebrow">GOOD TO KNOW</span><h2><span lang="ar">قبل أن تبدأ.</span><span lang="en">A few things<br>worth knowing.</span></h2><p><span lang="ar">إجابات واضحة، بدون تعقيد.</span><span lang="en">Straight answers. No guesswork.</span></p></div><div>
+<details><summary><span lang="ar">هل يحتاج الهاتف إلى الإنترنت؟</span><span lang="en">Does my phone need an internet connection?</span></summary><p><span lang="ar">يحتاج التحويل إلى البريد وتيليجرام والروابط إلى الإنترنت. التحويل إلى رقم آخر يستخدم خدمة SMS وقد تترتب عليه رسوم المشغّل. يجب أن يظل الهاتف مشغّلاً مع منح الصلاحيات المطلوبة.</span><span lang="en">Email, Telegram and webhook delivery need internet access. Forwarding to another phone uses SMS and carrier charges may apply. Keep your phone on and grant the required permissions.</span></p></details>
+<details><summary><span lang="ar">كيف يعمل تحويل RCS؟</span><span lang="en">How does RCS forwarding work?</span></summary><p><span lang="ar">يقرأ التطبيق النص المتاح في إشعار رسالة RCS عند منح صلاحية الوصول للإشعارات. يعتمد ذلك على تطبيق الرسائل وإعدادات الإشعارات؛ ولا يعني نسخ المحادثة كاملة أو تحويل المرفقات.</span><span lang="en">The app reads text available in an RCS notification when notification access is enabled. Availability depends on your messaging app and notification settings; this is not a full conversation or attachment sync.</span></p></details>
+<details><summary><span lang="ar">هل تُحوّل رموز التحقق تلقائيًا؟</span><span lang="en">Are verification codes forwarded automatically?</span></summary><p><span lang="ar">تُحجب الرسائل التي يكتشفها التطبيق كرموز تحقق أو رسائل بنكية افتراضياً. يمكنك السماح بها لقاعدة محددة. الاكتشاف يعتمد على محتوى الرسالة ولا يضمن التعرف على كل صيغة.</span><span lang="en">Messages detected as verification codes or bank alerts are blocked by default. You can allow them for a specific rule. Detection depends on the message content and may not identify every format.</span></p></details>
+<details><summary><span lang="ar">ماذا يحدث بعد انتهاء التجربة؟</span><span lang="en">What happens after the trial?</span></summary><p><span lang="ar">تبقى القواعد محفوظة. تعمل أقدم قاعدة مفعّلة ومؤهلة للخطة المجانية بوجهة واحدة؛ وتنتظر الميزات المدفوعة حتى الاشتراك.</span><span lang="en">Your rules remain saved. The oldest enabled rule eligible for Free keeps working with one destination; paid features wait until you subscribe.</span></p></details>
+<details><summary><span lang="ar">هل التطبيق متاح للتحميل الآن؟</span><span lang="en">Can I download it now?</span></summary><p><span lang="ar">التطبيق في مرحلة ما قبل الإطلاق. يمكنك مراسلتنا لطلب الانضمام إلى الاختبار أو إشعارك عند الإطلاق.</span><span lang="en">The app is currently pre-launch. Contact us to request testing access or a launch notification.</span></p><a href="mailto:support@secretqube.com?subject=SMS%20Forwarder%20early%20access"><span lang="ar">تواصل معنا</span><span lang="en">Get in touch</span></a></details>
+</div></div></section>
 <section aria-labelledby="lang-title" style="padding-top:0">
   <div class="wrap">
     <div class="sec-head">
