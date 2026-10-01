@@ -37,7 +37,7 @@
 <main>
 <section class="doc-hero"><div class="wrap">
   <h1><span lang="ar">سياسة الخصوصية</span><span lang="en">Privacy Policy</span></h1>
-  <p><span lang="ar">محوّل الرسائل SMS Forwarder من Secret Qube. آخر تحديث: 1 أكتوبر 2026.</span><span lang="en">SMS Forwarder by Secret Qube. Last updated 1 October 2026.</span></p>
+  <p><span lang="ar">محوّل الرسائل SMS Forwarder من Secret Qube. آخر تحديث: 1&nbsp;أكتوبر&nbsp;2026.</span><span lang="en">SMS Forwarder by Secret Qube. Last updated 1 October 2026.</span></p>
 </div></section>
 <div class="wrap doc">
   <nav class="toc" aria-label="Contents"><ol>
@@ -73,7 +73,7 @@
       <tr><th>الإذن</th><th>السبب</th></tr>
       <tr><td>استقبال الرسائل</td><td>ليُسلَّم التطبيق كل رسالة جديدة لحظة وصولها (النص والمرسل) فتُقارَن بقواعد التحويل التي وضعتها. لا يقرأ التطبيق صندوق رسائلك ولا الرسائل القديمة.</td></tr>
       <tr><td>إرسال الرسائل</td><td>فقط حين تكون وجهة القاعدة رقم هاتف آخر — لإرسال النسخة المحوّلة.</td></tr>
-      <tr><td>جهات الاتصال (قراءة)</td><td>فقط عند ضغطك على أيقونة اختيار جهة اتصال أثناء إنشاء قاعدة، لتعبئة الرقم نيابةً عنك. لا يُقرأ شيء آخر من جهات اتصالك.</td></tr>
+      <tr><td>منتقي جهات الاتصال (بلا إذن)</td><td>عند ضغطك على أيقونة جهة الاتصال أثناء إنشاء قاعدة، يفتح أندرويد منتقيه لتختار رقماً واحداً، فيرى التطبيق ذلك الرقم فقط. لا يطلب التطبيق إذن قراءة جهات الاتصال عنك. لا يُقرأ شيء آخر من جهات اتصالك.</td></tr>
       <tr><td>الإشعارات</td><td>لإخبارك أن رسالة حُوِّلت، أو أن التحويل فشل.</td></tr>
       <tr><td>الوصول إلى الإشعارات (اختياري)</td><td>فقط إذا فعّلت تحويل رسائل الدردشة (RCS) أو إشعارات تطبيقات تختارها. راجع القسم 5.</td></tr>
       <tr><td>الإنترنت وحالة الشبكة</td><td>يُستخدم فقط لإرسال الرسالة إلى وجهة اخترتها (بريد أو تيليجرام أو رابط)، وللانتظار حتى يتصل الجوال قبل الإرسال، و— إذا فعّلت تقارير الحالة — لذكر ما إذا كان الجوال متصلاً.</td></tr>
@@ -85,7 +85,7 @@
       <tr><th>Permission</th><th>Why</th></tr>
       <tr><td>Receive SMS</td><td>To be handed each new incoming message (text and sender) as it arrives, so it can be checked against your forwarding rules. The app does not read your inbox or older messages.</td></tr>
       <tr><td>Send SMS</td><td>Only when a rule's destination is another phone number — to send the forwarded copy.</td></tr>
-      <tr><td>Contacts (read)</td><td>Only when you tap the contact-picker icon while building a rule, to fill in a number for you. Nothing else is read from your contacts.</td></tr>
+      <tr><td>Contact picker (no permission)</td><td>When you tap the contact icon while building a rule, Android's own picker lets you choose one number, and the app sees only that number. The app does not ask for permission to read your contacts.</td></tr>
       <tr><td>Notifications</td><td>To tell you a message was forwarded, or that a forward failed.</td></tr>
       <tr><td>Notification access (optional)</td><td>Only if you turn on forwarding of chat messages (RCS) or of notifications from apps you pick. See section 5.</td></tr>
       <tr><td>Internet and network state</td><td>Only used to send a message to a destination you chose (email, Telegram or a link), to wait until the phone is online before sending, and — if you turn on status reports — to report whether the phone is online.</td></tr>
@@ -95,10 +95,10 @@
     </section>
     <section id="s3">
       <h2><span lang="ar">أين تعيش بياناتك</span><span lang="en">Where your data lives</span></h2>
-      <div lang="ar"><p>كل ما يخزّنه التطبيق — قواعدك، سجلّ تحويلاتك، إعداداتك — يبقى <strong>على جهازك فقط</strong>، في قاعدة بيانات محلية. لا تُشغّل Secret Qube أي خادم يستقبل رسائلك أو يخزّنها أو حتى يراها. لا يوجد شيء يمكن اختراقه من جهتنا، لأنه لا يوجد شيء من بياناتك عندنا أصلاً.</p>
+      <div lang="ar"><p>قواعدك وسجلّ تحويلاتك يبقيان <strong>على جهازك فقط</strong>، في قاعدة بيانات محلية مستثناة من النسخ الاحتياطي السحابي. أما إعدادات التطبيق العامة (مثل اللغة ومدة حفظ السجل) فقد تُضمَّن في نسخة Google الاحتياطية لجوالك إن كانت مفعّلة. لا تُشغّل Secret Qube أي خادم يستقبل رسائلك أو يخزّنها أو حتى يراها. لا يوجد شيء يمكن اختراقه من جهتنا، لأنه لا يوجد شيء من بياناتك عندنا أصلاً.</p>
     <p>كلمة مرور البريد أو كلمة مرور التطبيق التي تُدخلها لإعداد SMTP، ورمز بوت تيليجرام، تُشفَّر جميعها عبر Android Keystore قبل أن تُخزَّن، وتُستثنى من النسخ الاحتياطي السحابي التلقائي لأندرويد. وكذلك الترويسات الإضافية التي تضيفها إلى رابط.</p>
     <p>الشيء الوحيد الذي يحفظه التطبيق خارج ذاكرة الجوال هو تاريخ بدء فترتك التجريبية ومدتها، عبر Block Store من جوجل (ضمن نسخة جوجل الاحتياطية لجوالك)، حتى لا تبدأ التجربة من جديد بإعادة التثبيت. لا يحتوي على أي رسالة أو قاعدة أو جهة اتصال، ولا تستطيع Secret Qube قراءته.</p></div>
-      <div lang="en"><p>Everything the app stores — your rules, your forwarding history, your settings — is kept <strong>only on your device</strong>, in a local database. Secret Qube runs no server that receives, stores, or ever sees your messages. There is nothing to breach on our end, because there is nothing of yours on our end.</p>
+      <div lang="en"><p>Your rules and your forwarding history are kept <strong>only on your device</strong>, in a local database that is excluded from cloud backup. The app's general settings (such as language and how long to keep history) may be included in your phone's Google backup if you use it. Secret Qube runs no server that receives, stores, or ever sees your messages. There is nothing to breach on our end, because there is nothing of yours on our end.</p>
     <p>An email password or app password you enter for SMTP, and a Telegram bot token, are encrypted with the Android Keystore before they touch storage, and are excluded from Android's automatic cloud backup. So are the extra headers you add to a link.</p>
     <p>The only thing the app keeps outside the phone's own storage is the start date and length of your free trial, saved with Google's Block Store (part of your phone's Google backup), so the trial is not restarted by reinstalling. It contains no message, rule or contact, and Secret Qube cannot read it.</p></div>
     </section>
@@ -116,15 +116,15 @@
     <section id="s5">
       <h2><span lang="ar">رسائل الدردشة وإشعارات التطبيقات</span><span lang="en">Chat messages and app notifications</span></h2>
       <div lang="ar"><p>تصل بعض الرسائل دردشةً (RCS) بدل SMS، وتصل بعض التنبيهات إشعاراً من تطبيق فقط. تحويل هذه <strong>اختياري ومُطفأ افتراضياً</strong>. إذا فعّلته، يشرح التطبيق ما يحتاجه ثم يطلب منك منح <em>الوصول إلى الإشعارات</em> من إعدادات أندرويد.</p>
-    <p>بهذا الإذن يُطلع أندرويد التطبيق على كل إشعار جديد. ينظر التطبيق فقط في إشعارات تطبيق الرسائل (لرسائل الدردشة) وإشعارات التطبيقات التي اخترتها بنفسك، ويتجاهل أي إشعار آخر فوراً دون حفظه. تُحفظ بصمة قصيرة لنص الرسائل الأخيرة على الجهاز لفترة محدودة، فقط لمنع تحويل الرسالة نفسها مرتين. يمكنك سحب الإذن في أي وقت من إعدادات أندرويد، ويستمر تحويل SMS دونه.</p></div>
+    <p>بهذا الإذن يُطلع أندرويد التطبيق على كل إشعار جديد. ينظر التطبيق فقط في إشعارات تطبيق الرسائل (لرسائل الدردشة) وإشعارات التطبيقات التي اخترتها بنفسك، ويتجاهل أي إشعار آخر فوراً دون حفظ محتواه؛ ويحتفظ على الجوال فقط بعدد مرات الإشعار لكل تطبيق، ليعرض التطبيقات الأكثر نشاطاً أولاً عند الاختيار. تُحفظ بصمة قصيرة لنص الرسائل الأخيرة على الجهاز لفترة محدودة، فقط لمنع تحويل الرسالة نفسها مرتين. يمكنك سحب الإذن في أي وقت من إعدادات أندرويد، ويستمر تحويل SMS دونه.</p></div>
       <div lang="en"><p>Some messages arrive as chat (RCS) instead of SMS, and some alerts arrive only as an app's notification. Forwarding these is <strong>optional and off by default</strong>. If you turn it on, the app explains what it needs and then asks you to grant Android's <em>notification access</em> in system settings.</p>
-    <p>With that access, Android shows the app each new notification. The app looks only at notifications from your messaging app (for chat messages) and from the apps you picked yourself; every other notification is ignored on the spot and never stored. A short fingerprint of recent message text is kept on the device for a limited time, only to avoid forwarding the same message twice. You can withdraw notification access at any time in Android settings, and forwarding of SMS keeps working without it.</p></div>
+    <p>With that access, Android shows the app each new notification. The app looks only at notifications from your messaging app (for chat messages) and from the apps you picked yourself; every other notification is ignored on the spot and its content is never stored; the app only keeps, on the phone, a count of how often each app notifies, to list the busiest apps first when you choose apps. A short fingerprint of recent message text is kept on the device for a limited time, only to avoid forwarding the same message twice. You can withdraw notification access at any time in Android settings, and forwarding of SMS keeps working without it.</p></div>
     </section>
     <section id="s6">
       <h2><span lang="ar">البريد الإلكتروني و Gmail</span><span lang="en">Email and Gmail</span></h2>
-      <div lang="ar"><p>إذا اخترت «استخدام Gmail» لإرسال البريد، يطلب التطبيق من جوجل صلاحية <strong>إرسال فقط</strong> (<code>gmail.send</code>). لا يمكنه قراءة صندوق بريدك أو البحث فيه أو حذف شيء منه أو الوصول إليه بأي شكل آخر — يمكنه فقط تأليف وإرسال تلك الرسالة المحوّلة الواحدة. يمكنك إلغاء هذه الصلاحية في أي وقت من إعدادات الأمان في حساب Google، تحت «وصول تطبيقات الطرف الثالث».</p>
+      <div lang="ar"><p>إذا اخترت «استخدام Gmail» لإرسال البريد، يطلب التطبيق من جوجل صلاحية <strong>إرسال فقط</strong> (<code>gmail.send</code>). لا يمكنه قراءة صندوق بريدك أو البحث فيه أو حذف شيء منه أو الوصول إليه بأي شكل آخر — يمكنه فقط تأليف وإرسال تلك الرسالة المحوّلة الواحدة. يمكنك إلغاء هذه الصلاحية في أي وقت من إعدادات الأمان في حساب Google، تحت «وصول تطبيقات الطرف الثالث». ويلتزم استخدام التطبيق للمعلومات التي يتلقاها من واجهات Google البرمجية بسياسة بيانات مستخدمي خدمات Google API، بما فيها متطلبات الاستخدام المحدود (Limited Use).</p>
     <p>إذا اخترت «استخدام SMTP» بدلاً من ذلك، يُستخدم بريدك وكلمة مرورك فقط للاتصال بخادم البريد الذي تحدّده (Gmail أو Yahoo أو أي مزوّد آخر)، ويُخزَّنان مشفّرين على جهازك كما ذُكر أعلاه.</p></div>
-      <div lang="en"><p>If you choose "Use Gmail" for email delivery, the app requests a Google <strong>send-only</strong> permission (<code>gmail.send</code>). It cannot read, search, delete, or otherwise access your inbox — it can only compose and send the one forwarded message. You can revoke this at any time from your Google Account's Security settings, under Third-party access.</p>
+      <div lang="en"><p>If you choose "Use Gmail" for email delivery, the app requests a Google <strong>send-only</strong> permission (<code>gmail.send</code>). It cannot read, search, delete, or otherwise access your inbox — it can only compose and send the one forwarded message. You can revoke this at any time from your Google Account's Security settings, under Third-party access. SMS Forwarder's use of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements.</p>
     <p>If you choose "Use SMTP" instead, your email address and password are used only to connect to the mail server you specify (Gmail, Yahoo, or any provider), and are stored encrypted on your device as described above.</p></div>
     </section>
     <section id="s7">

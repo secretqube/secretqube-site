@@ -4,17 +4,23 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>SMS Forwarder by Secret Qube</title>
-<meta name="description" content="SMS & RCS Forwarder for Android: forward incoming messages to email, Telegram, Slack, Google Sheets or another phone, by your own rules, straight from your phone. By Secret Qube.">
+<meta name="description" content="SMS & RCS Forwarder for Android: forward incoming messages to your email, Telegram or another phone by your own rules, straight from your phone. Slack, Teams and Google Sheets on Business. By Secret Qube.">
 <meta name="theme-color" content="#024E55">
 <link rel="canonical" href="https://secretqube.com/">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:title" content="SMS Forwarder by Secret Qube">
-<meta property="og:description" content="Forward SMS & RCS to email, Telegram, Slack, Google Sheets or another phone, by your rules.">
+<meta property="og:description" content="Forward SMS & RCS to your email, Telegram or another phone, by your rules. No servers for your message content.">
+<meta property="og:site_name" content="Secret Qube">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ar_AR">
+<meta property="og:image:alt" content="SMS Forwarder app icon with the text: Forward SMS and RCS to email, Telegram, Slack or another phone.">
 <meta property="og:image" content="https://secretqube.com/assets/og.png">
 <meta property="og:url" content="https://secretqube.com/">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://secretqube.com/assets/og.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SMS Forwarder","operatingSystem":"Android","applicationCategory":"UtilitiesApplication","description":"Forward incoming SMS and RCS to email, Telegram, another phone or team apps, by your own rules, straight from your phone.","inLanguage":["en","ar"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"Free plan; Pro and Business subscriptions through Google Play"},"publisher":{"@type":"Organization","name":"Secret Qube","url":"https://secretqube.com/","email":"support@secretqube.com","address":{"@type":"PostalAddress","addressLocality":"Muscat","addressCountry":"OM"}}}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300..700&display=swap" rel="stylesheet">
@@ -50,16 +56,17 @@
   </div>
 </header>
 
-<main>
+<a class="skip" href="#main"><span lang="ar">انتقل إلى المحتوى</span><span lang="en">Skip to content</span></a>
+<main id="main">
 <section class="hero" aria-labelledby="hero-title">
   <div class="wrap">
     <div>
       <span class="app-tag"><img src="assets/app-icon.png" alt="" width="40" height="40"><span lang="ar">محوّل الرسائل SMS Forwarder</span><span lang="en">SMS Forwarder for Android</span></span>
       <h1 id="hero-title"><span lang="ar">رسائلك تصل حيث تحتاجها.</span><span lang="en">Your messages, where you need them.</span></h1>
-      <p class="lede"><span lang="ar">حوّل رسائل SMS وRCS إلى بريدك أو تيليجرام أو Slack أو Google Sheets أو رقم آخر، بقواعد تضعها أنت، مباشرة من جوالك.</span><span lang="en">Forward SMS and RCS to your email, Telegram, Slack, Google Sheets or another phone, by rules you set, straight from your phone.</span></p>
+      <p class="lede"><span lang="ar">حوّل رسائل SMS وRCS إلى بريدك أو تيليجرام أو رقم آخر، بقواعد تضعها أنت، مباشرة من جوالك. ومع خطة Business إلى Slack أو Teams أو Google Sheets أيضًا.</span><span lang="en">Forward SMS and RCS to your email, Telegram or another phone, by rules you set, straight from your phone. On Business, to Slack, Teams and Google Sheets too.</span></p>
       <div class="cta-row">
         <a class="btn btn-light" href="#how"><span lang="ar">شاهد كيف يعمل</span><span lang="en">See how it works</span></a>
-        <span class="play-soon"><svg width="20" height="20" aria-hidden="true"><use href="#i-play"/></svg><span lang="ar">قريباً على Google Play</span><span lang="en">Coming soon to Google Play</span></span>
+        <a class="btn btn-ghost" href="mailto:support@secretqube.com?subject=Notify%20me%20when%20SMS%20Forwarder%20launches"><svg width="18" height="18" aria-hidden="true"><use href="#i-play"/></svg><span lang="ar">أبلغني عند الإطلاق على Google Play</span><span lang="en">Notify me at launch on Google Play</span></a>
       </div>
       <p class="hero-note"><span lang="ar">مجاني دائماً لقاعدة واحدة. جرّب كل الميزات 14 يوماً.</span><span lang="en">Free forever for one rule. Try every feature for 14 days.</span></p>
     </div>
@@ -69,9 +76,15 @@
       <svg class="wires" aria-hidden="true"></svg>
       <div class="phone" aria-hidden="true">
         <div class="scr">
-          <div class="st-top"><div><b><span lang="ar">التحويل يعمل</span><span lang="en">Forwarding is running</span></b><span lang="ar">3 قواعد مفعّلة</span><span lang="en">3 rules on</span></div><span class="m-switch" style="margin-inline-start:auto"></span></div>
+          <div class="st-top"><div><b><span lang="ar">التحويل يعمل</span><span lang="en">Forwarding is running</span></b><span lang="ar">3 قواعد تعمل</span><span lang="en">3 rules on</span></div><span class="m-switch" style="margin-inline-start:auto"></span></div>
           <div class="notif" id="st-notif"></div>
           <div class="rule-chip" id="st-rule"></div>
+          <div class="st-hist">
+            <span><span lang="ar">اليوم</span><span lang="en">Today</span></span>
+            <div><i class="ok"></i><b>Courier</b><em>09:12</em></div>
+            <div><i class="hold"></i><b>Verify</b><em>08:47</em></div>
+            <div><i class="ok"></i><b><bdi dir="ltr">+1 555 0187</bdi></b><em>08:05</em></div>
+          </div>
           <div class="verdict" id="st-verdict"></div>
         </div>
       </div>
@@ -106,7 +119,7 @@
       <h2 id="screens-title"><span lang="ar">واضح من أول شاشة</span><span lang="en">Clear from the first screen</span></h2>
       <p><span lang="ar">ابدأ من وصفة جاهزة أو من الصفر، واعرف دائماً هل التحويل يعمل.</span><span lang="en">Start from a ready recipe or from scratch, and always know whether forwarding is running.</span></p>
     </div>
-    <div class="screens">
+    <div class="screens" role="region" tabindex="0" aria-label="App screens">
       <figure class="shot">
         <div class="phone" aria-hidden="true"><div class="scr">
           <div class="m-head">
@@ -147,7 +160,7 @@
           <div class="m-body">
             <div class="m-card"><div class="r"><b>Courier</b><span class="m-time">10:42</span></div><span lang="ar">طردك 4471 يصل اليوم بين 2 و5 مساءً</span><span lang="en">Your parcel 4471 arrives today, 2–5 pm</span><div class="m-chips"><span class="m-pill ok"><span lang="ar">أُرسلت إلى تيليجرام</span><span lang="en">Sent to Telegram</span></span><span class="m-pill ok"><span lang="ar">أُرسلت إلى البريد</span><span lang="en">Sent to email</span></span></div></div>
             <div class="m-card"><div class="r"><b>Verify</b><span class="m-time">10:15</span></div><span lang="ar">رمز التحقق الخاص بك 482913</span><span lang="en">Your verification code is 482913</span><div class="m-chips"><span class="m-pill hold"><span lang="ar">تم حجبها</span><span lang="en">Held back</span></span></div></div>
-            <div class="m-card"><div class="r"><b>+1 555 0142</b><span class="m-time">09:58</span></div><span lang="ar">مرحباً، هل الطلب 2207 جاهز للاستلام؟</span><span lang="en">Hi, is order 2207 ready for pickup?</span><div class="m-chips"><span class="m-pill ok"><span lang="ar">أُرسلت إلى Slack</span><span lang="en">Sent to Slack</span></span></div></div>
+            <div class="m-card"><div class="r"><b><bdi dir="ltr">+1 555 0142</bdi></b><span class="m-time">09:58</span></div><span lang="ar">مرحباً، هل الطلب 2207 جاهز للاستلام؟</span><span lang="en">Hi, is order 2207 ready for pickup?</span><div class="m-chips"><span class="m-pill ok"><span lang="ar">أُرسلت إلى Slack</span><span lang="en">Sent to Slack</span></span></div></div>
           </div>
           <div class="m-nav"><span><i></i><span lang="ar">الرئيسية</span><span lang="en">Home</span></span><span class="on"><i></i><span lang="ar">السجل</span><span lang="en">History</span></span><span><i></i><span lang="ar">الإعدادات</span><span lang="en">Settings</span></span></div>
         </div></div>
@@ -167,7 +180,7 @@
       <li><span class="ic"><svg><use href="#i-phone"/></svg></span><b><span lang="ar">رقم آخر</span><span lang="en">Another phone</span></b><p><span lang="ar">نسخة SMS إلى أي رقم، ومع جوال بشريحتين تختار شريحة الإرسال.</span><span lang="en">An SMS copy to any number. On a dual-SIM phone, you pick the SIM that sends it.</span></p></li>
       <li><span class="ic"><svg><use href="#i-mail"/></svg></span><b><span lang="ar">البريد الإلكتروني</span><span lang="en">Email</span></b><p><span lang="ar">عبر Gmail بصلاحية إرسال فقط، أو أي حساب SMTP.</span><span lang="en">Through Gmail with send-only access, or any SMTP account.</span></p></li>
       <li><span class="ic"><svg><use href="#i-send"/></svg></span><b><span lang="ar">تيليجرام</span><span lang="en">Telegram</span></b><p><span lang="ar">عبر بوتك الخاص إلى محادثة أو مجموعة تختارها.</span><span lang="en">Through your own bot, to a chat or group you choose.</span></p></li>
-      <li><span class="ic"><svg><use href="#i-hash"/></svg></span><b><span lang="ar">Slack وTeams وDiscord وGoogle Chat</span><span lang="en">Slack, Teams, Discord, Google Chat</span><span class="tag">Business</span></b><p><span lang="ar">رسائل العملاء تصل إلى قناة فريقك.</span><span lang="en">Customer messages land in your team's channel.</span></p></li>
+      <li><span class="ic"><svg><use href="#i-hash"/></svg></span><b><span lang="ar">Slack أو Teams أو Discord أو Google Chat</span><span lang="en">Slack, Teams, Discord, Google Chat</span><span class="tag">Business</span></b><p><span lang="ar">رسائل العملاء تصل إلى قناة فريقك.</span><span lang="en">Customer messages land in your team's channel.</span></p></li>
       <li><span class="ic"><svg><use href="#i-grid"/></svg></span><b>Google Sheets<span class="tag">Business</span></b><p><span lang="ar">كل رسالة صف جديد في جدولك، عبر سكربت في حسابك أنت.</span><span lang="en">Each message becomes a new row, through a script in your own account.</span></p></li>
       <li><span class="ic"><svg><use href="#i-link"/></svg></span><b><span lang="ar">أدوات الأتمتة وأي رابط</span><span lang="en">Automation tools and any link</span><span class="tag">Business</span></b><p><span lang="ar">أرسل الرسالة إلى رابط Webhook بالصيغة التي تحددها.</span><span lang="en">Send the message to a webhook link, in the format you define.</span></p></li>
     </ul>
@@ -207,7 +220,7 @@
         <p class="note"><span lang="ar">مجاني دائماً</span><span lang="en">Free forever</span></p>
       </div>
       <div class="plan pro">
-        <h3>Pro</h3>
+        <h3>Pro <span class="tag tag-accent" style="margin:0"><span lang="ar">مقترح</span><span lang="en">Recommended</span></span></h3>
         <p class="who"><span lang="ar">لمن لديه أكثر من رسالة مهمة وأكثر من وجهة.</span><span lang="en">For more than one kind of message, to more than one place.</span></p>
         <ul>
           <li><svg width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg><span><span lang="ar">قواعد بلا حد، 3 وجهات لكل قاعدة</span><span lang="en">Unlimited rules, 3 destinations each</span></span></li>
@@ -221,7 +234,7 @@
         <p class="who"><span lang="ar">لجوال المكتب الذي يخدم فريقاً.</span><span lang="en">For an office phone that serves a team.</span></p>
         <ul>
           <li><svg width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg><span><span lang="ar">كل ما في Pro، و10 وجهات لكل قاعدة</span><span lang="en">Everything in Pro, 10 destinations per rule</span></span></li>
-          <li><svg width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg><span><span lang="ar">Slack وGoogle Sheets والروابط وإشعارات التطبيقات</span><span lang="en">Slack, Google Sheets, links and app notifications</span></span></li>
+          <li><svg width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg><span><span lang="ar">الروابط: Slack أو Google Sheets، وإشعارات التطبيقات</span><span lang="en">Slack, Google Sheets, links and app notifications</span></span></li>
           <li><svg width="16" height="16" aria-hidden="true"><use href="#i-check"/></svg><span><span lang="ar">تقارير يومية وتنبيهات البطارية والاتصال وتصدير CSV</span><span lang="en">Daily reports, battery and offline alerts, CSV export</span></span></li>
         </ul>
         <p class="note"><span lang="ar">شهري أو سنوي عبر Google Play</span><span lang="en">Monthly or yearly through Google Play</span></p>
@@ -238,7 +251,7 @@
       <p><span lang="ar">التطبيق بـ20 لغة، مع دعم كامل للكتابة من اليمين إلى اليسار والوضع الداكن والخط الكبير.</span><span lang="en">The app speaks 20 languages, with full right-to-left support, dark mode and large text.</span></p>
     </div>
     <ul class="langs">
-      <li lang="en">English</li><li dir="rtl">العربية</li><li>Deutsch</li><li>Español</li><li>Français</li><li>Italiano</li><li>Nederlands</li><li>Polski</li><li>Português (Brasil)</li><li>Русский</li><li>Türkçe</li><li dir="rtl">فارسی</li><li dir="rtl">اردو</li><li>हिन्दी</li><li>Bahasa Indonesia</li><li>Tiếng Việt</li><li>ไทย</li><li>简体中文</li><li>日本語</li><li>한국어</li>
+      <li translate="no">English</li><li dir="rtl">العربية</li><li>Deutsch</li><li>Español</li><li>Français</li><li>Italiano</li><li>Nederlands</li><li>Polski</li><li>Português (Brasil)</li><li>Русский</li><li>Türkçe</li><li dir="rtl">فارسی</li><li dir="rtl">اردو</li><li>हिन्दी</li><li>Bahasa Indonesia</li><li>Tiếng Việt</li><li>ไทย</li><li>简体中文</li><li>日本語</li><li>한국어</li>
     </ul>
   </div>
 </section>
@@ -250,6 +263,7 @@
       <h2 id="studio-title"><span lang="ar">من Secret Qube</span><span lang="en">Made by Secret Qube</span></h2>
       <p><span lang="ar">استوديو برمجيات مستقل من مسقط، عُمان. نبني تطبيقات بسيطة الاستخدام لجمهور عالمي، تحترم خصوصية مستخدميها وتعمل على أجهزتهم دون وسيط.</span><span lang="en">An independent software studio from Muscat, Oman. We build apps that are simple to use, made for people everywhere, that respect their users' privacy and run on their own devices with no middleman.</span></p>
       <p><span lang="ar">للتواصل:</span><span lang="en">Get in touch:</span> <a href="mailto:support@secretqube.com">support@secretqube.com</a></p>
+      <p><span lang="ar">تريد تجربته قبل الإطلاق؟</span><span lang="en">Want to try it before launch?</span> <a href="mailto:support@secretqube.com?subject=Join%20the%20SMS%20Forwarder%20test"><span lang="ar">انضم إلى المختبرين</span><span lang="en">Join the testers</span></a></p>
     </div>
   </div>
 </section>

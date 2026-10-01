@@ -46,9 +46,13 @@
     { from: 'Verify', msg: bi('رمز التحقق الخاص بك 482913', 'Your verification code is 482913'),
       rule: bi('القاعدة: كل الرسائل', 'Rule: Every message'), ruleSub: bi('تبدو رمز تحقق', 'Looks like a one-time code'),
       to: [], verdict: bi('حُجبت وبقيت على جوالك', 'Held back. It stayed on your phone'), hold: true },
-    { from: '+1 555 0142', msg: bi('مرحباً، هل الطلب 2207 جاهز للاستلام؟', 'Hi, is order 2207 ready for pickup?'),
+    { from: '<bdi dir="ltr">+1 555 0142</bdi>', msg: bi('مرحباً، هل الطلب 2207 جاهز للاستلام؟', 'Hi, is order 2207 ready for pickup?'),
       rule: bi('القاعدة: رسائل العملاء', 'Rule: Customer messages'), ruleSub: bi('خلال أوقات العمل', 'Within working hours'),
-      to: ['slack', 'sheets', 'sms'], verdict: bi('أُرسلت إلى 3 وجهات', 'Sent to 3 destinations'), hold: false }
+      to: ['slack', 'sheets', 'sms'], verdict: bi('أُرسلت إلى 3 وجهات', 'Sent to 3 destinations'), hold: false },
+    // A message in another language: the app forwards any script as it is.
+    { from: 'Mamá', msg: '<span dir="ltr" lang="es-x">¿Llegaste bien? Llámame cuando puedas.</span>',
+      rule: bi('القاعدة: أمي إلى جوالي الثاني', 'Rule: Mom to my second phone'), ruleSub: bi('كل رسائلها', 'All her messages'),
+      to: ['sms', 'tg'], verdict: bi('أُرسلت إلى وجهتين', 'Sent to 2 destinations'), hold: false }
   ];
 
   var elNotif = document.getElementById('st-notif'), elRule = document.getElementById('st-rule'), elVerdict = document.getElementById('st-verdict');
