@@ -37,7 +37,7 @@
 <main>
 <section class="doc-hero"><div class="wrap">
   <h1><span lang="ar">سياسة الخصوصية</span><span lang="en">Privacy Policy</span></h1>
-  <p><span lang="ar">تطبيق Flux SMS Forwarder من Secret Qube. آخر تحديث: 1&nbsp;أكتوبر&nbsp;2026.</span><span lang="en">Flux SMS Forwarder by Secret Qube. Last updated 1 October 2026.</span></p>
+  <p><span lang="ar">تطبيق Flux SMS Forwarder من Secret Qube. آخر تحديث: 13&nbsp;أكتوبر&nbsp;2026.</span><span lang="en">Flux SMS Forwarder by Secret Qube. Last updated 13 October 2026.</span></p>
 </div></section>
 <div class="wrap doc">
   <nav class="toc" aria-label="Contents"><ol>
@@ -47,6 +47,7 @@
       <li><a href="#s4"><span lang="ar">كيف تُستخدم رسائلك</span><span lang="en">How your messages are used</span></a></li>
       <li><a href="#s5"><span lang="ar">رسائل الدردشة وإشعارات التطبيقات</span><span lang="en">Chat messages and app notifications</span></a></li>
       <li><a href="#s6"><span lang="ar">البريد الإلكتروني و Gmail</span><span lang="en">Email and Gmail</span></a></li>
+      <li><a href="#s6g"><span lang="ar">بيانات مستخدم Google</span><span lang="en">Google user data</span></a></li>
       <li><a href="#s7"><span lang="ar">تيليجرام</span><span lang="en">Telegram</span></a></li>
       <li><a href="#s8"><span lang="ar">الروابط (Webhooks)</span><span lang="en">Links (webhooks)</span></a></li>
       <li><a href="#s9"><span lang="ar">تقارير الحالة والتنبيهات</span><span lang="en">Status reports and alerts</span></a></li>
@@ -126,6 +127,23 @@
     <p>إذا اخترت «استخدام SMTP» بدلاً من ذلك، يُستخدم بريدك وكلمة مرورك فقط للاتصال بخادم البريد الذي تحدّده (Gmail أو Yahoo أو أي مزوّد آخر)، ويُخزَّنان مشفّرين على جهازك كما ذُكر أعلاه.</p></div>
       <div lang="en"><p>If you choose "Use Gmail" for email delivery, the app requests a Google <strong>send-only</strong> permission (<code>gmail.send</code>). It cannot read, search, delete, or otherwise access your inbox — it can only compose and send the one forwarded message. You can revoke this at any time from your Google Account's Security settings, under Third-party access. Flux SMS Forwarder's use of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements.</p>
     <p>If you choose "Use SMTP" instead, your email address and password are used only to connect to the mail server you specify (Gmail, Yahoo, or any provider), and are stored encrypted on your device as described above.</p></div>
+    </section>
+    <section id="s6g">
+      <h2><span lang="ar">بيانات مستخدم Google</span><span lang="en">Google user data</span></h2>
+      <div lang="ar"><p>ينطبق هذا القسم فقط إذا اخترت «تسجيل الدخول بحساب Google» لإرسال البريد.</p>
+    <p><strong>البيانات التي نصل إليها.</strong> يطلب التطبيق صلاحيتين: (1) عنوان بريد حسابك في Google (<code>userinfo.email</code>) لعرض الحساب المتصل وتحديد عنوان المرسِل فقط؛ (2) صلاحية إرسال البريد نيابةً عنك (<code>gmail.send</code>). لا يستطيع التطبيق قراءة أي رسالة في Gmail أو البحث فيها أو عرضها أو تعديلها أو حذفها، ولا يصل إلى جهات الاتصال أو Google Drive أو أي بيانات Google أخرى.</p>
+    <p><strong>كيف نستخدمها.</strong> تُستخدم الصلاحية لغرض واحد: إرسال الرسائل التي ضبطت التطبيق على تحويلها، من بريدك أنت إلى المستلمين الذين حددتهم في قواعدك. لا تُستخدم للإعلانات أو التحليل أو بناء ملفات تعريف أو أي غرض آخر.</p>
+    <p><strong>المشاركة والنقل.</strong> تُرسل الرسالة مباشرةً من جوالك إلى واجهة Gmail من Google. لا يمر شيء عبر خوادم Secret Qube، ولا نبيع بيانات مستخدم Google ولا نشاركها ولا ننقلها إلى أي طرف ثالث. ولا نستخدمها لتطوير أو تحسين أو تدريب نماذج الذكاء الاصطناعي أو التعلم الآلي.</p>
+    <p><strong>كيف نحميها.</strong> رمز الوصول تديره خدمات Google Play على جهازك ولا يصلنا ولا يُكتب في أي سجل. عنوان بريدك المتصل مخزّن على جهازك مشفّراً عبر Android Keystore ومستثنى من النسخ الاحتياطي السحابي. كل اتصال مع Google يتم عبر HTTPS.</p>
+    <p><strong>الاحتفاظ والحذف.</strong> تبقى بيانات Google على جهازك فقط، وتُزال عند تسجيل الخروج من حساب Google داخل التطبيق، أو مسح بيانات التطبيق، أو حذفه. ويمكنك سحب الصلاحية في أي وقت من حساب Google ← الأمان ← وصول تطبيقات الطرف الثالث. لا نحتفظ بأي نسخة لأننا لا نستقبل هذه البيانات أصلاً.</p>
+    <p><strong>الاستخدام المحدود.</strong> يلتزم استخدام Flux SMS Forwarder للمعلومات الواردة من Google APIs ونقلها إلى أي تطبيق آخر بـ <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">سياسة بيانات مستخدمي خدمات Google API</a>، بما فيها متطلبات الاستخدام المحدود (Limited Use).</p></div>
+      <div lang="en"><p>This section applies only if you choose "Sign in with Google" for email delivery.</p>
+    <p><strong>Data we access.</strong> The app requests two permissions: (1) your Google account email address (<code>userinfo.email</code>), used only to show which account is connected and to set the sender address; and (2) permission to send email on your behalf (<code>gmail.send</code>). The app cannot read, search, list, modify or delete any message in your Gmail account, and it does not access your contacts, Google Drive or any other Google data.</p>
+    <p><strong>How we use it.</strong> The permission is used for one purpose only: sending the messages you configured the app to forward, from your own Gmail address to the recipients you chose in your rules. It is never used for advertising, analytics, profiling or any other purpose.</p>
+    <p><strong>Sharing and transfer.</strong> The message is sent directly from your phone to Google's Gmail API. Nothing passes through Secret Qube servers, and we do not sell, share or transfer Google user data to any third party. We do not use Google user data to develop, improve or train artificial intelligence or machine learning models.</p>
+    <p><strong>How we protect it.</strong> The access token is managed by Google Play services on your device; it is never sent to us and never written to a log. Your connected email address is stored on your device, encrypted with the Android Keystore and excluded from cloud backup. All communication with Google uses HTTPS.</p>
+    <p><strong>Retention and deletion.</strong> Google user data stays on your device only. It is removed when you sign out of your Google account inside the app, clear the app's data, or uninstall the app. You can also revoke access at any time from your Google Account → Security → Third-party access. We keep no copy, because we never receive this data.</p>
+    <p><strong>Limited Use.</strong> Flux SMS Forwarder's use and transfer of information received from Google APIs to any other app will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</p></div>
     </section>
     <section id="s7">
       <h2><span lang="ar">تيليجرام</span><span lang="en">Telegram</span></h2>
