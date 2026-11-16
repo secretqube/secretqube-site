@@ -6,4 +6,5 @@
   if (!l) { try { l = localStorage.getItem('sq-lang'); } catch (e) {} }
   if (l !== 'ar' && l !== 'en') l = /^ar\b/i.test(navigator.language || '') ? 'ar' : 'en';
   h.setAttribute('data-lang', l); h.lang = l; h.dir = l === 'ar' ? 'rtl' : 'ltr';
+  h.classList.add('js'); /* lets the landing page hide things only when scripts will reveal them */
 })();
